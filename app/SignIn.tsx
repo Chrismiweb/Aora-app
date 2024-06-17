@@ -1,4 +1,4 @@
-import { View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-native'
+import { View, Text, TextInput, StyleSheet, TouchableOpacity, Image } from 'react-native'
 import React, { useState } from 'react'
 import { Link } from 'expo-router'
 
@@ -7,11 +7,13 @@ const signUp = () => {
     // function changeColor(){
     //     NoChange(!change)
     // }
+
+    // signin code for this app 
   return (
     <View style={myStyle.container}>
-        {/* <View style={myStyle.container}>
-            <img src={require('../assets/images/logo.png')} alt="" />
-        </View> */}
+        <View style={myStyle.container}>
+            <Image source={require('../assets/images/logo.png')} alt="" />
+        </View>
         <View style={myStyle.header}>
             <Text style={myStyle.signUp}>Sign In</Text>
         </View>
